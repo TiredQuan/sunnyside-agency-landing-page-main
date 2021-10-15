@@ -38,6 +38,8 @@ The designs were created to the following widths:
 - Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
 - Weights: 700, 900
 
+font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif;
 ## Icons
 
 We provide the required social icons. But, if you prefer, you can use a font icon library. Some suggestions can be found below:
@@ -45,3 +47,4 @@ We provide the required social icons. But, if you prefer, you can use a font ico
 - [Font Awesome](https://fontawesome.com)
 - [IcoMoon](https://icomoon.io)
 - [Ionicons](https://ionicons.com)
+
