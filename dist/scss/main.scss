@@ -5,3 +5,171 @@
 
 @import 'base/reset';
 @import 'base/typography';
+header{
+    background: #3DBEFF center/cover url('../../images/mobile/image-header.jpg') no-repeat;
+    width: 100%;
+    height: rem(538);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    section{
+        padding: rem(35) rem(20);
+        display: flex;
+        justify-content: space-between;
+        button{
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+    }
+    }
+    h1{
+        text-align: center;
+        font-size: $font-size*2.2;
+        letter-spacing: rem(5);
+        text-transform: uppercase;
+        color: $white;
+    }
+    :nth-child(3){
+        margin: rem(20) auto;
+    }
+}
+.object{
+    height: rem(312);
+    width: 100%;
+    &__egg{
+        background:$yellow center/cover url('../../images/mobile/image-transform.jpg') no-repeat;
+    }
+    &__cup{
+        background: $soft-red center/cover url('../../images/mobile/image-stand-out.jpg');
+    }
+}
+.first{
+    div{
+        background-color: $yellow;
+    }
+}
+.second{
+    div{
+        background-color: $soft-red;
+    }
+}
+
+.main{
+    &__text{
+        margin: 50px 20px;
+        h2{
+            font-size: $font-size*1.8;
+            color:$very-dark-desaturated-blue;
+            font-weight: map-get($weights, bold );
+        }
+        p{
+            color: $grayish-blue;
+            font-size: $font-size;
+            line-height: 1.5;
+        }
+        &--learn-more{
+            color: $very-dark-desaturated-blue;
+            text-decoration:none;
+            position: relative;
+            text-transform:uppercase;
+            z-index: 1;
+            font-weight: map-get($weights, bold );
+            font-size: $font-size*0.9;
+            letter-spacing: rem(1);
+            div{
+                width: rem(138);
+                height: rem(6);
+                position: absolute;
+                bottom: rem(2);
+                left: rem(-6);
+                z-index: -1;
+                border-radius: 30px;
+            }
+        }
+    }
+    &__text2{
+        height: rem(600);
+        padding: rem(375) rem(20) rem(50);
+        
+        h3{
+            font-size: $font-size*1.5;
+            font-weight: map-get($weights, bold );
+        }
+        p{
+            font-size: $font-size*0.9;
+            line-height: 1.5;
+        }
+        &--cherry{
+            color: $dark-desaturated-cyan;
+            background: $dark-desaturated-cyan center/cover url(../../images/mobile/image-graphic-design.jpg);
+        }
+        &--orange{
+            color:$dark-blue;
+            background: $dark-desaturated-cyan center/cover url(../../images/mobile/image-photography.jpg);
+        }
+    }
+    &__client{
+        margin-bottom: rem(60);
+        h4{
+            text-transform: uppercase;
+            color:$grayish-blue;
+            font-size: $font-size*0.9;
+            letter-spacing: rem(3);
+        }
+        &__avatar{
+            height: rem(72);
+            width: rem(72);
+            border-radius: 50%;
+            margin: rem(60) auto 0;
+            &--emily{
+                background: center/cover url(../../images/image-emily.jpg) no-repeat;
+            }
+            &--thomas{
+                background: center/cover url(../../images/image-thomas.jpg) no-repeat;
+            }
+            &--jennie{
+                background: center/cover url(../../images/image-jennie.jpg) no-repeat;
+
+            }
+        }
+        p{
+            font-size: rem(18);
+            margin: rem(16) rem(20);
+            color: $very-dark-grayish-blue;
+            line-height: 1.5;
+
+        }
+        &__title{
+
+            h5{
+                font-size: $font-size;
+                font-weight: map-get($weights, bold );
+                color: $very-dark-desaturated-blue;
+                margin: rem(10) 0;
+            }
+            p{
+                font-size: $font-size*0.7;
+                margin: 0;
+            }
+        }
+    }
+    &__illust{
+        height: 100vw;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        :nth-child(1){
+            background: center/cover url(../../images/mobile/image-gallery-milkbottles.jpg) no-repeat;
+        }
+        :nth-child(2){
+            background: center/cover url(../../images/mobile/image-gallery-orange.jpg) no-repeat;
+        }
+        :nth-child(3){
+            background: center/cover url(../../images/mobile/image-gallery-cone.jpg) no-repeat;
+        }
+        :nth-child(4){
+            background: center/cover url(../../images/mobile/image-gallery-sugar-cubes.jpg) no-repeat;
+        }
+    }
+}
