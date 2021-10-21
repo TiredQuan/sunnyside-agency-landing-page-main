@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="dist/css/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://kit.fontawesome.com/8d43c58fe5.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -27,58 +28,68 @@
 
    <section id="nav-bar" class="nav-bar">
      <a href="#"><img src="images/logo.svg" alt="Sunnyside logo"></a>
-     <button class="nav-hamberger" title="menu"><img src="images/icon-hamburger.svg" alt="menu"></button>
+     <button class="nav-hamberger" title="menu"><img src="images/icon-hamburger.svg" alt="menu" onclick="hambaga()"></button>
+     <div class="nav-hamberger__drop-down">
+       <a href="#" class="nav__links">About</a><a href="#" class="nav__links">Services</a><a href="#" class="nav__links">Projects</a><button class="nav__contact">Contact</button>
+     </div>
+     <div class="nav--desktop">
+      <a href="#" class="nav__links">About</a><a href="#" class="nav__links">Services</a><a href="#" class="nav__links">Projects</a><button class="nav__contact">Contact</button>
+     </div>
    </section>
-   <h1>We are creatives</h1>
-   <img src="images/icon-arrow-down.svg" alt="Arrow down">
+   <h1 >We are creatives</h1>
+   <img class="header__header" src="images/icon-arrow-down.svg" alt="Arrow down">
   </header>
   
   <main class="main">
-    <div title="Illustration Egg" class="object object__egg"></div>
-    <section class="main__text">
-      <h2>Transform your brand</h2>
-      <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you</p>
-      <a href="#" class="learn-more main__text--learn-more first">Learn more<div></div></a>
-    </section>
-    <div title="cup" class="object object__cup"></div>
-    <section class="main__text">
-      <h2>Stand out to the right audience
-      </h2>
-      <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and exten your brand in digital places.</p>
-      <a href="#" class="learn-more main__text--learn-more second">Learn more<div></div></a>
-    </section>
-    <section class="main__text2 main__text2--cherry">
-      <h3>Graphic Design</h3>
-      <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.</p>
-    </section>
-    <section class="main__text2 main__text2--orange">
-      <h3>Photography</h3>
-      <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
-    </section>
+    <div class="main__desktop-grid">
+      <div title="Illustration Egg" class="object object__egg"></div>
+      <section class="main__text main__transform">
+        <h2>Transform your brand</h2>
+        <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you</p>
+        <a href="#" class="learn-more main__text--learn-more first">Learn more<div></div></a>
+      </section>
+      <div title="cup" class="object object__cup"></div>
+      <section class="main__text main__stand-out">
+        <h2>Stand out to the right audience
+        </h2>
+        <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and exten your brand in digital places.</p>
+        <a href="#" class="learn-more main__text--learn-more second">Learn more<div></div></a>
+      </section>
+      <section class="main__text2 main__text2--cherry">
+        <h3>Graphic Design</h3>
+        <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.</p>
+      </section>
+      <section class="main__text2 main__text2--orange">
+        <h3>Photography</h3>
+        <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+      </section>
+    </div>
     <section class="main__client">
       <h4>Client testimonials</h4>
-      <div >
-        <div class="main__client__avatar main__client__avatar--emily" title="Emily's avatar"></div>
-        <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-        <div class="main__client__title">
-          <h5>Emily R.</h5>
-          <p>Marketing Director</p>
+      <div class="main__client--desktop">
+        <div >
+          <div class="main__client__avatar main__client__avatar--emily" title="Emily's avatar"></div>
+          <p class="main__client--desktop--para">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <div class="main__client__title">
+            <h5>Emily R.</h5>
+            <p>Marketing Director</p>
+          </div>
         </div>
-      </div>
-      <div >
-        <div class="main__client__avatar main__client__avatar--thomas" title="Thomas's avatar"></div>
-        <p>Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
-        <div class="main__client__title">
-          <h5>Thomas S.</h5>
-          <p>Chief Operating Officer</p>
+        <div>
+          <div class="main__client__avatar main__client__avatar--thomas" title="Thomas's avatar"></div>
+          <p class="main__client--desktop--para">Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
+          <div class="main__client__title">
+            <h5>Thomas S.</h5>
+            <p>Chief Operating Officer</p>
+          </div>
         </div>
-      </div>
-      <div>
-        <div class="main__client__avatar main__client__avatar--jennie" title="Jennie's avatar"></div>
-        <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-        <div class="main__client__title">
-          <h5>Jennie F.</h5>
-          <p>Business Owner</p>
+        <div>
+          <div class="main__client__avatar main__client__avatar--jennie" title="Jennie's avatar"></div>
+          <p class="main__client--desktop--para">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <div class="main__client__title">
+            <h5>Jennie F.</h5>
+            <p>Business Owner</p>
+          </div>
         </div>
       </div>
     </section>
@@ -89,25 +100,26 @@
       <div></div>
     </section>
   </main>
-  <footer>
+  <footer class="footer">
     <div class="footer__logo" title="logo"></div>
     <div class="footer__weblink">
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Projects</a>
+      <a href="#" class="footer__weblink--links">About</a>
+      <a href="#" class="footer__weblink--links">Services</a>
+      <a href="#" class="footer__weblink--links">Projects</a>
     </div>
     <div class="footer__social">
-      <a href="#"><div class="footer__social--facebook" title=facebook></div></a>
-      <a href="#"><div class="footer__social--instagram" title=instagram></div></a>
-      <a href="#"><div class="footer__social--twitter" title=twitter></div></a>
-      <a href="#"><div class="footer__social--pinterest" title=pinterest></div></a>
+      <a href="#"><i class="fab fa-facebook-square" title="facebook link"></i></a>
+      <a href="#"><i class="fab fa-instagram" title="instagram link"></i></a>
+      <a href="#"><i class="fab fa-twitter" title="twitter link"></i></a>
+      <a href="#"><i class="fab fa-pinterest" title="pinterest link"></i></a>
     </div>
   </footer>
-  <div class="attribution">
+  <div title="attribution" class="attribution">
     <p>
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://www.frontendmentor.io/profile/TiredQuan">TiredQuan</a>.
     </p>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>

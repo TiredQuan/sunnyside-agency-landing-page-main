@@ -14,7 +14,7 @@
 
 // - Mobile: 375px
 // - Desktop: 1440px
-$desktop: 43.75em;
+$desktop: em(1100);
 // ## Colors
 
 // ### Primary
@@ -23,7 +23,7 @@ $soft-red: hsl(7, 99%, 70%);
 $yellow: hsl(51, 100%, 49%);
 $dark-desaturated-cyan : hsl(167, 40%, 24%); //(graphic design text)
 $dark-blue : hsl(198, 62%, 26%); //(photography text)
-$dark-moderate-cyan : hsl(168, 34%, 41%); //(footer)
+$dark-moderate-cyan : hsl(168, 37%, 51%); //(footer)
 
 // ### Neutral
 
